@@ -1,0 +1,128 @@
+.wrapper{
+  width: 90%;
+  height: auto;
+  position: relative;
+  top: 200px;
+  bottom: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.h1{
+  width: 700px;
+  height: 200px;
+  position: relative;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 30px;
+  font-weight: 800;
+  text-align: center;
+  color: white;
+}
+.h1>p{
+  line-height: 20px;
+}
+.category{
+    width: 100%;
+    height: auto;
+    
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    overflow-y:scroll;
+    place-items: center;
+    
+  
+  }
+  ::-webkit-scrollbar{
+      display: none;
+  }
+  .pick{
+    background-color: aliceblue;
+    width: 300px;
+    height: 400px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 30px;
+    border-radius: 10px;
+    transform: perspective(200px) translateZ(-20px);
+    box-shadow: 3px 3px 3px 3px  rgb(126, 212, 247);
+    color: rgb(75, 70, 70);
+    justify-content: center;
+   
+  }
+
+  .pick:hover{
+    transition: .2s ease-in;
+    transform: perspective(200px) translateZ(0px);
+    transform: translateY(-10px);
+    box-shadow: 1px 1px 4px 4px  rgb(126, 212, 247);
+
+  }
+
+  .pick_img{
+      width: 300px;
+      height: 150px;
+      border-radius: 5px 5px 0 0;
+  }
+  
+  #Cat_desc{
+    width: 280px;
+    height: 100px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 70px;
+    text-align: justify;
+    text-justify: inter-word;
+    overflow: scroll;
+    cursor :all-scroll;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+  }
+
+  #Cat_btn{
+      position: absolute;
+      left: 85%;
+      top: 125px;
+      transform: translateX(-50%);
+      bottom: 30px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      outline: none;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: cadetblue;
+      cursor: pointer;
+      
+  }
+  #Cat_btn:hover{
+    transition: .2s ease-in-out;
+    
+    background-color: rgb(4, 240, 240);
+  }
+  #arrow{
+      color: rgb(45, 65, 245);
+      
+    /* animation: arrow-animation 2s infinite linear; */
+
+  }
+  /* @keyframes arrow-animation{
+    from{
+      transform: translateX(0px);
+    }
+    to{
+      transform: translateX(20px);
+  
+    }
+  } */
