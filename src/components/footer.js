@@ -12,7 +12,7 @@ const footer = () => {
     e.preventDefault()
     if (input) {
       await axios
-        .post("http://localhost:5000", {
+        .post(process.env.REACT_APP_SERVER, {
           form_email: input,
         })
         .then(data => {
