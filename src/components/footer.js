@@ -11,14 +11,13 @@ const footer = () => {
   const handleSub = async e => {
     e.preventDefault()
     if (input) {
-      await axios
-        .post(process.env.REACT_APP_SERVER, {
-          form_email: input,
-        })
-        .then(data => {
-          setSubscribed(true)
-        })
-        .catch(err => console.log(err))
+      window.open(
+        `mailto:${process.env.REACT_APP_TO_EMAIL}?subject=${encodeURIComponent(
+          subject
+        )}&body=hello I'm ${encodeURIComponent(name)} (${encodeURIComponent(
+          input
+        )}): ${encodeURIComponent(message)}`
+      )
     }
     setInput("")
   }
