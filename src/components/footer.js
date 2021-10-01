@@ -16,7 +16,7 @@ const footer = () => {
           subject
         )}&body=hello reply to (${encodeURIComponent(
           input
-        )}): ${encodeURIComponent(message)}`
+        )}): ${encodeURIComponent("just subscribed")}`
       )
     }
     setInput("")
