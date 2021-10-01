@@ -13,7 +13,7 @@ const footer = () => {
     if (input) {
       window.open(
         `mailto:${process.env.REACT_APP_TO_EMAIL}?subject=${encodeURIComponent(
-          subject
+          "New Subscriber"
         )}&body=hello reply to (${encodeURIComponent(
           input
         )}): ${encodeURIComponent("just subscribed")}`
