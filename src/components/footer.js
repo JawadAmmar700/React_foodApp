@@ -14,7 +14,7 @@ const footer = () => {
       window.open(
         `mailto:${process.env.REACT_APP_TO_EMAIL}?subject=${encodeURIComponent(
           subject
-        )}&body=hello I'm ${encodeURIComponent(name)} (${encodeURIComponent(
+        )}&body=hello reply to (${encodeURIComponent(
           input
         )}): ${encodeURIComponent(message)}`
       )
